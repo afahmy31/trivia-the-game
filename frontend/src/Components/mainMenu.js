@@ -21,14 +21,12 @@ export default function MainMenu() {
   }
 
   return (
-    <Container>
-      <div className='main-menu'>
-        <img className='image' src={image} alt="Logo" />
-        <h2>Dodo's Trivia Night</h2>
-        <TextField className='name-input' label={"Team One Name"} onChange={(e) => setTeamOneName(e.target.value)}></TextField>
-        <TextField className='name-input' label={"Team Two Name"} onChange={(e) => setTeamTwoName(e.target.value)}></TextField>
-        <Button variant='contained' onClick={() => handleNewGame()}>New Game</Button>
-      </div>
-    </Container>
+    <div className='main-menu'>
+      <img className='image' src={image} alt="Logo" />
+      <h2>Dodo's Trivia Night</h2>
+      <TextField className='name-input' label={"Team One Name"} onChange={(e) => setTeamOneName(e.target.value)}></TextField>
+      <TextField className='name-input' label={"Team Two Name"} onChange={(e) => setTeamTwoName(e.target.value)}></TextField>
+      <Button variant='contained' onClick={() => handleNewGame()}>New Game</Button>
+    </div>
   )
 }
